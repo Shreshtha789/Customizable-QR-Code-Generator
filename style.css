@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    height: 100%;
+    width: 100vw;
+    background-color: #257f4f;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.logo{
+    height: 100px;
+    width: 300px;
+}
+
+.about{
+    height: 100px;
+    width: 100px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 600px;
+    font-size: 26px;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+.qr-code-api{
+    height: 100px;
+    width: 200px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 110px;
+    font-size: 26px;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nav2-div{
+    color: white;
+    margin: 10px;
+    font-family: "Open Sans",Sans-Serif;
+    font-size: 20px;
+}
+
+#main-container{
+    background-color: #e8eef2;
+    margin-top: 50px;
+    width: 80vw;
+    display: flex;
+    margin-left: 10vw;
+    padding-bottom:20px ;
+}
+
+#note{
+    display: block;
+    color: grey;
+    font-size: 12px;
+}
+
+#fore-color{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#color-1{
+    height:40px ;
+    width:50px ;
+    margin-top: 2px;
+    position: relative;
+}
+
+#colort-1{
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    margin-bottom: 10px ;
+}
+
+#back-color{
+    margin-bottom: 12px;
+}
+
+#color-2{
+    height:40px ;
+    width:50px ;
+    margin-top: 2px;
+    position: relative;
+}
+
+#colort-2{
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    margin-bottom: 10px ;
+
+}
+
+#half-left{
+    width: 40vw;
+}
+
+#main1{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+#main1 input{
+    margin-top: 10px;
+    height: 30px;
+    width: 550px;
+    font-size: 24px;
+}
+
+#main2{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+
+
+#half-right{
+    width: 40vw;
+
+}
+
+#qr-con{
+    height: 300px;
+    width: 300px;
+    margin-top: 34px;
+    margin-left: 140px;
+}
+
+
+#main3{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+
+#qr-logo{
+    height: 60px;
+    width: 30px;
+
+}
+
+#qr-logo-container{
+    margin-top: 10px;
+    margin-bottom: 2px;
+
+}
+
+#main4{
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "Open Sans",Sans-Serif;
+    margin-top: 40px;
+}
+
+input::file-selector-button{
+    padding: 15px;
+    font-weight: bolder;
+    background-color: #257f4f;
+    border-radius: 20px;
+    border: 2px solid ;
+    color: white;
+}
+
+#submit-button{
+    height: 44px;
+    width: 180px;
+    font-weight: bolder;
+    background-color: #257f4f;
+    color: white;
+    border: 2px solid ;
+    border-radius: 10px;
+}
+
+
+#below-main{
+    width: 100vw;
+    background-color: white;
+    height: 200px;
+}
+
+#below-main-heading{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    color: gray;
+    font-family: "Open Sans",Sans-Serif;
+}
+
+#sub-heading{
+    font-family: "Open Sans",Sans-Serif;
+    text-align: center;
+    font-size: 31px;
+    margin-top: 20px;
+}
+
+
+
+
+/**/
+.number {
+    float: left;
+    margin: -4px 16px 8px 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: #8bc34a;
+    background: #257f4f;
+}
+
+.h5{
+    line-height: 1.25;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.text-block {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Open Sans",Sans-Serif;
+    color: #5f676d;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+/**/
+
+
+
+#below-main-2{
+    display: flex;
+    margin-top: 80px;
+}
+

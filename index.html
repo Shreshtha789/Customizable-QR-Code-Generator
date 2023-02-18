@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-qr.png">
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling/lib/qr-code-styling.js"></script>
+</head>
+
+<body>
+	<div id="container">
+    <div class="nav">
+        <div><image><img src="logo-perfect.png" class="logo"></image></div>
+        <div><h3 class="about">About</h3></div>
+        <div><h3 class="qr-code-api">QR Code API</h3></div>
+    </div>
+    <div class="nav2">
+        <div class="nav2-div"><p>URL</p></div>
+        <div class="nav2-div"><p>TEXT</p></div>
+        <div class="nav2-div"><p>EMAIL</p></div>
+        <div class="nav2-div"><p>SMS</p></div>
+        <div class="nav2-div"><p>V-CARD</p></div>
+        <div class="nav2-div"><p>FACEBOOK</p></div>
+        <div class="nav2-div"><p>TWITTER</p></div>
+        <div class="nav2-div"><p>YOUTUBE</p></div>
+        <div class="nav2-div"><p>WIFI</p></div>
+        <div class="nav2-div"><p>EVENT</p></div>
+    </div>
+
+    <div id="main-container">
+        <div id="half-left">
+            <main>
+                <div>
+                    <div id="main1">
+                        <p>YOUR URL:</p>
+                        <input type="url" id="url">
+                    </div>
+                    <div id="main2">
+                        <p>SET COLORS:</p>
+                        <small id="note">Please select color in contrast.</small>
+                        <p id="fore-color">Select Foreground Color:</p>
+                        <div style="display: flex;">
+                        <div style="padding-bottom:30px">
+                            <input type="color" id="color-1" value="#000000">
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <input type="text" id="colort-1">
+                        </div>
+                        </div>
+                        <p id="back-color">Select Background Color:</p>
+                        <div style="display: flex;">
+                        <div style="padding-bottom:30px">
+                            <input type="color" id="color-2" value="#ffffff">
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <input type="text" id="colort-2">
+                        </div>
+                        </div>
+                    </div>
+                    <div id="main3">
+                        <p>Add Logo Image:</p>
+                        <small style="display: block; font-size: 12px; line-height: -5px; color: gray; ">Spotlight your logo!
+                        Make your brand instantly recognizable as your company logo becomes the center of attention on your QR Code.</small>
+                        <div id="qr-logo-container">
+                            <input type="file" id="img qr-logo" name="img" accept="image/*">
+                        </div>
+                        <small style="display: block; font-size: 12px; line-height: -5px; color: gray;">Upload your own custom logo image as .png, .jpg, .gif or .svg file format with a maximum size of 2 MB. You can also select a logo for your QR code from the gallery.</small>
+                    </div>
+                    <div id="main4">
+                        <p style="margin-bottom: 20px;">Customize Design:</p>
+                        <form>
+                            <input type="radio" id="rounded" name="cus-design" value="rounded"
+                            class="select" checked="checked">
+                            <label for="rounded">Rounded</label><br>
+                            <input type="radio" id="dots" name="cus-design" value="dots" class="select">
+                            <label for="dots">Dots</label><br>
+                            <input type="radio" id="classy" name="cus-design" value="classy" class="select">
+                            <label for="classy">Classy</label><br>
+                            <input type="radio" id="classy-rounded" name="cus-design" value="classy-rounded" class="select">
+                            <label for="classy-rounded">Classy-rounded</label><br>
+                            <input type="radio" id="square" name="cus-design" value="square"  class="select">
+                            <label for="square">Square</label><br>
+                            <input type="radio" id="extra-rounded" name="cus-design" value="extra-rounded" class="select">
+                            <label for="extra-rounded">Extra-rounded</label><br><br>
+                            <input type="submit" value="Create QR Code" id="submit-button">
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div id="half-right">
+            <div id="qr-con">
+                <image>
+                    <img src="istockper.jpg" id="qr-code">
+                </image>
+            </div>
+        </div>
+    </div>
+    <div id="below-main">
+        <div>
+            <h4 id="below-main-heading">GET STARTED</h4>
+            <p id="sub-heading"><b>Create</b> your <b>custom QR Code</b> with <b>Logo</b></p>
+        </div>
+        <div id="below-main-2">
+            <div style="width: 20vw; margin-right: 4vw; margin-left: 4vw;">
+                <div class="number">1</div>
+                <h3 class="h5">Set QR Content</h3>
+                <p class="text-block">
+                    Select a content type at the top for your QR code (URL, Text, Email...). After selecting your type you will see all available options. Enter all fields that should appear when scanning your QR code. Make sure everything you enter is correct because you can’t change the content once your QR code is printed.
+                </p>
+            </div>
+            <div style="width: 20vw; margin-right: 4vw;">
+                <div class="number">2</div>
+                <h3 class="h5">Customize Design</h3>
+                <p class="text-block">
+                    You want your QR code to look unique? Set a custom color and replace the standard shapes of your QR code. The corner elements and the body can be customized individually. Add a logo to your QR code. Select it from the gallery or upload your own logo image. You can also start with one of the templates from the template gallery.
+                </p>
+            </div>
+            <div style="width: 20vw; margin-right: 4vw;">
+                <div class="number">3</div>
+                <h3 class="h5">Generate QR Code</h3>
+                <p class="text-block">
+                    Set the pixel resolution of your QR code with the slider. Click the "Create QR Code"-button to see your qr code preview. Please make sure your QR code is working correctly by scanning the preview with your QR Code scanner. Use a high resolution setting if you want to get a png code with print quality.
+                </p>
+            </div>
+            <div style="width: 20vw; margin-right: 4vw;">
+                <div class="number">4</div>
+                <h3 class="h5">Download Image</h3>
+                <p class="text-block">
+                    Now you can download the image files for your QR code as <strong>.png</strong> or <strong>.svg</strong>, <strong>.pdf</strong>, <strong>.eps</strong> vector graphic. If you want a vector format with the complete design please choose .svg. SVG is working in software like Adobe Illustrator or Inkscape. The logo and design settings currently only work for .png and .svg files.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+            
+    </div>
+    </div>
+
+    
+    <!--
+	<main>
+		<div id="qrcode"></div>
+        <div id="qr" style="margin-top: 100px;"></div>
+	</main>
+    -->
+	<script src="logic.js">
+	</script>
+</body>
+
+</html>
