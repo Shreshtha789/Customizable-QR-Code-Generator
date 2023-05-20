@@ -161,9 +161,13 @@
 }
 
 #qr-logo-container{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 2px;
+}
 
+#qr-code{
+    height:300px;
+    length:300px;
 }
 
 #main4{
